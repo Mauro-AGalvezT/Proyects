@@ -28,7 +28,7 @@ const whitePlane = new THREE.Mesh(whitePlaneGeometry, whiteMaterial);
 whitePlane.rotation.x = -Math.PI / 2;
 whitePlane.position.set(0, -2, 0);
 scene.add(whitePlane);
-loader.load('Sunflower_1.glb', (gltf) => {
+loader.load('./Sunflower_1.glb', (gltf) => {
 
   model = gltf.scene;
   model.position.set(0, 1, 0);
