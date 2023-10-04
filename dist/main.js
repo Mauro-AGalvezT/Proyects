@@ -1,6 +1,6 @@
-import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from '../node_modules/three';
+import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader';
 
 
 const loader = new GLTFLoader();
