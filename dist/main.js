@@ -1,6 +1,6 @@
-import * as THREE from './node_modules/three';
-import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 const loader = new GLTFLoader();
@@ -28,7 +28,7 @@ const whitePlane = new THREE.Mesh(whitePlaneGeometry, whiteMaterial);
 whitePlane.rotation.x = -Math.PI / 2;
 whitePlane.position.set(0, -2, 0);
 scene.add(whitePlane);
-loader.load('./Sunflower_1.glb', (gltf) => {
+loader.load('sunflower.glb', (gltf) => {
 
   model = gltf.scene;
   model.position.set(0, 1, 0);
