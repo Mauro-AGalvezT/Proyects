@@ -1,6 +1,6 @@
-import * as THREE from '../node_modules/three';
-import { OrbitControls } from '../node_modules/three/examples/jsm/controls/OrbitControls';
-import { GLTFLoader } from '../node_modules/three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from 'https://unpkg.com/three@0.127.0/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from 'https://unpkg.com/three@0.127.0/examples/jsm/loaders/GLTFLoader';
 
 
 const loader = new GLTFLoader();
@@ -15,7 +15,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 scene.background = new THREE.Color(0xffffff);
 const ambientLight = new THREE.AmbientLight(0x404040);
-ambientLight.intensity = 60;
+ambientLight.intensity = 12;
 scene.add(ambientLight);
 const geometry = new THREE.BoxGeometry(1, 1, 1);
 const edges = new THREE.EdgesGeometry(geometry);
